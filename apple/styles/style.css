@@ -1,0 +1,845 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*-----------------------------------*/
+   /* ----------fonts----------- /
+   font-family: 'IBM Plex Sans', sans-serif;
+   font-family: 'Montserrat', sans-serif;
+   font-family: 'Poppins', sans-serif;
+/* ------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: .3s ease all;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+/* --------------------------------------- */
+   /* -------------comments------------- */
+/* --------------------------------------- */
+
+/* --------------------------------------- */
+
+
+
+
+
+/* --------------------------------------- */
+   /* -------------header------------- */
+/* --------------------------------------- */
+.header{
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 15px 150px;
+    backdrop-filter: blur(1.5px);
+    background: rgba(0, 0, 0, 0.837);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+.header .container_search_inp{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.975);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    color: #fff;
+}
+.header .container_search_inp.show_inp{
+    opacity: 1;
+    pointer-events: all;
+}
+.header .container_search_inp input{
+    color: #fff;
+    width: 50%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 4px;
+    background: transparent;
+}
+.header .ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .container_links{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header ul .icons{
+    margin: 0 3px;
+}
+.header ul a{
+    color: #ececec;
+    font-size: 12.6px;
+    text-transform: capitalize;
+    margin: 0 50px;
+}
+.header .ul i{
+    color: #fff;
+    cursor: pointer;
+}
+.header .ul .fa-apple{
+    font-size: 16px;
+}
+/* --------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* -------------first_section------------- */
+/* --------------------------------------- */
+
+.container_all_content{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.container_all_content .link_cont{
+    width: 100%;
+    height: 100%;
+    background: orange;
+}
+.container_all_content .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.container_all_content .container .descriptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container_all_content .container .descriptions h2{
+    font-size: 4em;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+.container_all_content .container .descriptions span:nth-child(2){
+    font-size: 30px;
+}
+.container_all_content .container .descriptions .more_op{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.container_all_content .container .descriptions .more_op a{
+    font-size: 20px;
+    color: #255ebb;
+}
+/* --------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* -------------second_section------------- */
+/* --------------------------------------- */
+
+.container_all_content .container_iphone14{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-top: 100px;
+}
+.container_all_content .container_iphone14 .descriptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+.container_all_content .container_iphone14 .descriptions h2{
+    font-size: 4em;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+.container_all_content .container_iphone14 .descriptions span:nth-child(2){
+    font-size: 30px;
+}
+.container_all_content .container_iphone14 .descriptions .more_op{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.container_all_content .container_iphone14 .descriptions .more_op a{
+    font-size: 20px;
+    color: #255ebb;
+    margin-left: 20px;
+}
+/* --------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* -------gift_guide_section------- */
+/* --------------------------------------- */
+
+.container_all_content .container_guide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: #00002a;
+    margin-top: 100px;
+}
+.container_all_content .container_guide img{
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+.container_all_content .container_guide .descriptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: capitalize;
+    color: #fff;
+}
+.container_all_content .container_guide .descriptions h2{
+    font-size: 3.5em;
+    margin-bottom: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.container_all_content .container_guide .descriptions span:nth-child(2){
+    font-size: 25px;
+    width: 70%;
+    text-align: center;
+}
+.container_all_content .container_guide .descriptions .more_op{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.container_all_content .container_guide .descriptions .more_op a{
+    font-size: 20px;
+    color: #255ebb;
+    margin-left: 20px;
+}
+/* --------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* -------gift_guide_section------- */
+/* --------------------------------------- */
+
+.cont_more_productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding: 10px 25px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-top: 50px;
+}
+.cont_more_productos .card1, .card2, .card3, .card4, .card5, .card6{
+    text-align: center;
+    z-index: -1;
+}
+.cont_more_productos .card:nth-child(1){
+    background: #000;
+}
+.cont_more_productos img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+/* --------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* -------card_1_section------- */
+/* --------------------------------------- */
+.cont_more_productos .card1{
+    background: #000;
+    color: #fff;
+    position: relative;
+    text-transform: capitalize;
+}
+.cont_more_productos .card1 .descriptions{
+    margin-top: 20px;
+}
+.cont_more_productos .card1 .descriptions h2{
+    font-size: 2.4em;
+}
+.cont_more_productos .card1 .descriptions span{
+    font-size: 1.4em;
+}
+.cont_more_productos .card1 img{
+    width: 400px;
+    height: 400px;
+}
+.cont_more_productos .card1 .links{
+    margin-top: 10px;
+}
+.cont_more_productos .card1 .links a{
+    color: #255ebb;
+    margin: 0 10px;
+}
+/* --------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* -------card_2_section------- */
+/* --------------------------------------- */
+.cont_more_productos .card2{
+    position: relative;
+    text-transform: capitalize;
+}
+.cont_more_productos .card2 .descriptions{
+    margin-top: 20px;
+}
+.cont_more_productos .card2 .descriptions h2{
+    font-size: 2.4em;
+}
+.cont_more_productos .card2 .descriptions span{
+    font-size: 1.4em;
+}
+.cont_more_productos .card2 img{
+    width: 400px;
+    height: 400px;
+}
+.cont_more_productos .card2 .links{
+    margin-top: 10px;
+}
+.cont_more_productos .card2 .links a{
+    color: #255ebb;
+    margin: 0 10px;
+}
+/* --------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* -------card_3_section------- */
+/* --------------------------------------- */
+.cont_more_productos .card3{
+    position: relative;
+    text-transform: capitalize;
+    background: radial-gradient(#420b42, #000);
+    color: #fff;
+}
+.cont_more_productos .card3 .descriptions{
+    margin-top: 20px;
+}
+.cont_more_productos .card3 .descriptions button{
+    border: none;
+    outline: none;
+    background: linear-gradient(#1c1c1c, #2b2b2b);
+    border: 2px solid #efaa0a;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    margin-left: 5px;
+}
+.cont_more_productos .card3 .descriptions h2{
+    font-size: 2.4em;
+}
+.cont_more_productos .card3 .descriptions span{
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont_more_productos .card3 img{
+    width: 400px;
+    height: 400px;
+}
+.cont_more_productos .card3 .links{
+    margin-top: 10px;
+}
+.cont_more_productos .card3 .links a{
+    color: #255ebb;
+    margin: 0 10px;
+}
+/* --------------------------------------- */
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* -------card_4_section------- */
+/* --------------------------------------- */
+.cont_more_productos .card4{
+    position: relative;
+    text-transform: capitalize;
+}
+.cont_more_productos .card4 .descriptions{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.cont_more_productos .card4 .descriptions h2{
+    font-size: 2.4em;
+}
+.cont_more_productos .card4 .descriptions span:nth-child(2){
+    color: orangered;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.cont_more_productos .card4 .descriptions span{
+    font-size: 1.4em;
+}
+.cont_more_productos .card4 img{
+    width: 400px;
+    height: 400px;
+}
+.cont_more_productos .card4 .links{
+    margin-top: 10px;
+}
+.cont_more_productos .card4 .links a{
+    color: #255ebb;
+    margin: 0 10px;
+}
+/* --------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* -------card_4_section------- */
+/* --------------------------------------- */
+.cont_more_productos .card5{
+    position: relative;
+    text-transform: capitalize;
+    color: #fff;
+    background: #000;
+}
+.cont_more_productos .card5 .descriptions{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.cont_more_productos .card5 .descriptions h2{
+    font-size: 2.4em;
+}
+.cont_more_productos .card5 .descriptions span:nth-child(2){
+    color: crimson;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.cont_more_productos .card5 .descriptions span{
+    font-size: 1.4em;
+}
+.cont_more_productos .card5 img{
+    width: 400px;
+    height: 400px;
+}
+.cont_more_productos .card5 .links{
+    margin-top: 10px;
+}
+.cont_more_productos .card5 .links a{
+    color: #255ebb;
+    margin: 0 10px;
+}
+/* --------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* -------card_6_section------- */
+/* --------------------------------------- */
+.cont_more_productos .card6{
+    position: relative;
+    text-transform: capitalize;
+    background: #e3e3e3;
+}
+.cont_more_productos .card6 .descriptions{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.cont_more_productos .card6 .descriptions h2{
+    font-size: 2.4em;
+}
+.cont_more_productos .card6 .descriptions span:nth-child(2){
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.cont_more_productos .card6 .descriptions span{
+    font-size: 1.4em;
+}
+.cont_more_productos .card6 img{
+    width: 400px;
+    height: 400px;
+}
+.cont_more_productos .card6 .links{
+    margin-top: 10px;
+}
+.cont_more_productos .card6 .links a{
+    color: #255ebb;
+    margin: 0 10px;
+}
+/* --------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+   /* --------airpods styles---------- */
+/* --------------------------------------- */
+.container_all_content .container_vid_all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.container_all_content .container_video{
+    width: 100%;
+    height: 100vh;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.container_all_content .container_video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container_all_content .container_video .content{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container_all_content .container_video .content span:nth-child(1){
+    color: #02e002;
+}
+.container_all_content .container_video .content h2{
+    font-size: 7em;
+}
+.container_all_content .container_video .content span:nth-child(3){
+    font-size: 20px;
+}
+.container_all_content .container_video .content .btn{
+    position: absolute;
+    bottom: 25px;
+    right: 45px;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container_all_content .container_airpods{
+    width: 100%;
+    height: 120vh;
+    padding: 4px;
+    margin-top: 10px;
+    position: relative;
+}
+.container_all_content .container_airpods .container_img{
+    width: 100%;
+    height: 100%;
+}
+.container_all_content .container_airpods .container_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container_all_content .container_airpods .info-airpods{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container_all_content .container_airpods .info-airpods h2{
+    font-size: 7.5em;
+}
+.container_all_content .container_airpods .info-airpods span{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.container_all_content .container_airpods .info-airpods a{
+    font-size: 25px;
+    color: #255ebb;
+}
+.container_all_content .container_airpods .info-airpods .sh{   
+    text-shadow: 3px 3px 0 #808080;
+}
+/* --------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------- */
+/* -------card_6_section------- */
+/* --------------------------------------- */
+
+.container_all_content .container_airpods .watch{
+    color: #aaaaaa;
+}
+.container_all_content .container_airpods .watch .name{
+    text-shadow: 5px 5px 0 #2c2c2c;
+}
+
+
+.apple_family_watch{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 100px;
+}
+.apple_family_watch .container_img{
+    width: 50%;
+    height: 100%;
+}
+.apple_family_watch .container_img img{
+    width: 100%;
+    height: 100%;
+}
+.apple_family_watch .content span{
+    font-size: 17px;
+}
+.apple_family_watch .content h2{
+    font-size: 2.4em;
+}
+.apple_family_watch .content p{
+    font-size: 15px;
+    width: 70%;
+    margin-top: 5px;
+}
+.apple_family_watch .content a{
+    color: #255ebb;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.why_iphone{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.why_iphone img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.why_iphone .content{
+    color: #000;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.why_iphone .content h2{
+    font-size: 3em;
+    font-weight: 700;
+}
+.why_iphone .content span{
+    width: 70%;
+    font-weight: 500;
+    margin-top: 15px;
+}
